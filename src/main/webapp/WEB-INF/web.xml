@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>CamSearchCBR</display-name>
+	<servlet>
+		<servlet-name>CamSearchQuery</servlet-name>
+		<servlet-class>de.veisen.cscbr.CamSearchQuery</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CamSearchQuery</servlet-name>
+		<url-pattern>/CamSearchQuery</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CamSearchResults</servlet-name>
+		<servlet-class>de.veisen.cscbr.CamSearchResults</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CamSearchResults</servlet-name>
+		<url-pattern>/CamSearchResults</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MASGateway</servlet-name>
+		<servlet-class>de.veisen.cscbr.MASGateway</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MASGateway</servlet-name>
+		<url-pattern>/MASGateway</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CamWebSearchResults</servlet-name>
+		<servlet-class>de.veisen.cscbr.CamWebSearchResults</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CamWebSearchResults</servlet-name>
+		<url-pattern>/CamWebSearchResults</url-pattern>
+	</servlet-mapping>
+</web-app>

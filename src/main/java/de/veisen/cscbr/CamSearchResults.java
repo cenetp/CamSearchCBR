@@ -138,7 +138,6 @@ public class CamSearchResults extends HttpServlet {
 
     // Get the results
     List<Pair<Instance, Similarity>> resultList = camRetrieval.getResult();
-    // private HashMap<String, ICaseBase> caseBases;
     ArrayList<Hashtable<String, String>> resultTable;
     if (resultList.size() > 0) {
       resultTable = new ArrayList<>();
@@ -212,20 +211,6 @@ public class CamSearchResults extends HttpServlet {
       throws IOException {
     response.setContentType("text/html;charset=UTF-8");
 
-    // boolean automodesBoolean =
-    // Boolean.parseBoolean(request.getParameter("automodes"));
-    // boolean flashBoolean = Boolean.parseBoolean(request.getParameter("flash"));
-    // boolean dustReductBoolean =
-    // Boolean.parseBoolean(request.getParameter("dustreduct"));
-    // boolean imageStabBoolean =
-    // Boolean.parseBoolean(request.getParameter("imagestab"));
-    // boolean liveViewBoolean =
-    // Boolean.parseBoolean(request.getParameter("liveview"));
-    // boolean multLangBoolean =
-    // Boolean.parseBoolean(request.getParameter("multlang"));
-    // boolean videoBoolean = Boolean.parseBoolean(request.getParameter("video"));
-    // boolean wifiBoolean = Boolean.parseBoolean(request.getParameter("wifi"));
-
     int effPixInt = Integer.parseInt(request.getParameter("effpix"));
     int focusPointsInt = Integer.parseInt(request.getParameter("focuspoints"));
     int ISOmaxInt = Integer.parseInt(request.getParameter("isomax"));
@@ -256,9 +241,7 @@ public class CamSearchResults extends HttpServlet {
       out.println("<body>");
       out.println(
           "<div id='nav'><p>CamSearchCBR <span class='page-title'>/ Search Results</span></p></div>");
-      // out.println("<br>used Case Bases: " + prjName);
-      // out.println("<br>default Case Bases: " + defaultCB.toString());
-      // out.println("<br>concept: " + concept.toString());
+
       out.println("<h3 id='new-query'><a href='CamSearchQuery'>New Query</a></h3>");
 
       // Anfrage in der Konsole ausgeben

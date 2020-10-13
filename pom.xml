@@ -1,32 +1,33 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>veisen</groupId>
-	<artifactId>camsearchcbr</artifactId>
-	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>camsearchcbr</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>veisen</groupId>
+    <artifactId>camsearchcbr</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>camsearchcbr</name>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
-	<!-- mvn install:install-file -Dfile=lib/myCBR-3.1.jar -DgroupId=de.dfki.mycbr -DartifactId=mycbr3 -Dversion=3.1 -Dpackaging=jar -->
-	<dependencies>
-		<dependency>
-			<groupId>de.dfki.mycbr</groupId>
-			<artifactId>mycbr3</artifactId>
-			<version>3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.0</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
-	<build>
-		<finalName>camsearchcbr</finalName>
-	</build>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <!-- mvn install:install-file -Dfile=lib/myCBR-3.1.jar -DgroupId=de.dfki.mycbr -DartifactId=mycbr3 -Dversion=3.1 -Dpackaging=jar -->
+    <dependencies>
+        <dependency>
+            <groupId>de.dfki.mycbr</groupId>
+            <artifactId>mycbr3</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>camsearchcbr</finalName>
+    </build>
 </project>

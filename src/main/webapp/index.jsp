@@ -21,6 +21,6 @@
             <p class="text">
                 Start a new query for retrieving the most suitable DSLR camera.
             </p>
-        </div>        
+        </div>
     </body>
 </html>

@@ -23,13 +23,11 @@ public class CamSearchQuery extends HttpServlet {
 	 *            servlet request
 	 * @param response
 	 *            servlet response
-	 * @throws ServletException
-	 *             if a servlet-specific error occurs
 	 * @throws IOException
 	 *             if an I/O error occurs
 	 */
-	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+  private void processRequest(HttpServletRequest request, HttpServletResponse response)
+			throws IOException {
 		response.setContentType("text/html;charset=UTF-8");
 		try (PrintWriter out = response.getWriter()) {
 			out.println("<!DOCTYPE html>");
@@ -109,14 +107,12 @@ public class CamSearchQuery extends HttpServlet {
 	 *            servlet request
 	 * @param response
 	 *            servlet response
-	 * @throws ServletException
-	 *             if a servlet-specific error occurs
 	 * @throws IOException
 	 *             if an I/O error occurs
 	 */
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+			throws IOException {
 		processRequest(request, response);
 	}
 
@@ -127,14 +123,12 @@ public class CamSearchQuery extends HttpServlet {
 	 *            servlet request
 	 * @param response
 	 *            servlet response
-	 * @throws ServletException
-	 *             if a servlet-specific error occurs
 	 * @throws IOException
 	 *             if an I/O error occurs
 	 */
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+			throws IOException {
 		processRequest(request, response);
 	}
 
